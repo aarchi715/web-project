@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+      integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+  </head>
+  <body>
+    <div class="container">
+      <canvas class="game" id="canvas" height="384px"></canvas>
+      <div id="liveView" class="webcam">
+        <video id="webcam" autoplay width="640" height="480"></video>
+        <canvas id="webcamCanvas" width="640" height="480"></canvas>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./engine.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
